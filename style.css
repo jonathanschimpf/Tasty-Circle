@@ -1,0 +1,107 @@
+
+/**************************************************************
+************************** CSS ********************************
+**************************************************************/
+
+
+* {
+
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    height: 100%;
+
+} 
+
+body {
+
+    margin:0;
+    overflow: hidden;
+    height: 100%;
+
+}
+
+#circleHeight {
+
+    height:100%
+
+}
+
+.circle {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    background: linear-gradient(270deg, #ff66e4, #1effff);
+    border-radius: 50%;
+    width: 50%;
+    height: 100%;
+    shape-outside: circle();
+    clip-path: circle();
+    transform: translate(-50% , -50%);
+
+  }
+
+.circle:hover {
+
+    background: linear-gradient(270deg, #1effff, #ff66e4);
+    background-size: 400% 400%; 
+    -webkit-animation: circleGradientAction 3s ease-in-out infinite alternate;
+    animation: circleGradientAction 3s ease-in-out infinite alternate;
+
+}
+
+@-webkit-keyframes circleGradientAction {
+
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+
+}
+
+@keyframes circleGradientAction {
+
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+
+}
+
+.gradient {
+
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    background: linear-gradient(270deg, #1effff, #ff66e4);
+
+  }
+
+.gradient:hover {
+
+    background: linear-gradient(270deg, #ff66e4, #1effff);
+    background-size: 400% 400%; 
+    -webkit-animation: gradientAction 3s ease-in-out infinite alternate;
+    animation: gradientAction 3s ease-in-out infinite alternate;
+   
+}
+
+@-webkit-keyframes gradientAction {
+
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+
+}
+
+@keyframes gradientAction {
+
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+
+}
+
